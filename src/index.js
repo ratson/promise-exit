@@ -1,5 +1,5 @@
 export default (x) => {
-  const p = typeof x === 'funtion' ? x() : x
+  const p = typeof x === 'function' ? x() : x
   p.then(() => {
     process.exit(0)
   }).catch((err) => {
