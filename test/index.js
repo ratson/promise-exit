@@ -1,7 +1,7 @@
 import test from 'ava'
 
-import exit from '../lib'
+import exit from '..'
 
-test('throw for non-promise', (t) => {
+test('throw for non-promise', t => {
   t.throws(() => exit(() => {}), /no promise-like object/)
 })
