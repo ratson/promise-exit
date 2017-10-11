@@ -13,7 +13,7 @@
   "repository": "ratson/promise-exit",
   "license": "MIT",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "files": [
     "*.md",
