@@ -3,8 +3,11 @@ import execa from 'execa'
 
 import exit from '..'
 
-test('throw for non-promise', t => {
-  t.throws(() => exit(() => {}), /no promise-like object/)
+test('exit 0', async t => {
+  const r = await execa('node', ['./fixtures/non-promise'], {
+    cwd: __dirname,
+  })
+  t.is(r.code, 0)
 })
 
 test('exit 0', async t => {

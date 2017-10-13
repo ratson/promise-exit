@@ -1,11 +1,8 @@
 'use strict'
 
 module.exports = (x, { errorCode = 1, trace = true } = {}) => {
-  const p = typeof x === 'function' ? x() : x
-  if (!p || typeof p.then !== 'function') {
-    throw new Error('no promise-like object is found')
-  }
-  Promise.resolve(p)
+  Promise.resolve()
+    .then(() => (typeof x === 'function' ? x() : x))
     .then(() => {
       process.exit(0)
     })
