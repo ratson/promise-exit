@@ -8,6 +8,7 @@
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.17.0",
+    "execa": "^0.8.0",
     "npm-run-all": "^3.1.2"
   },
   "repository": "ratson/promise-exit",

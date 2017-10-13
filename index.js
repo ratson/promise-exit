@@ -5,7 +5,7 @@ module.exports = (x, { errorCode = 1, trace = true } = {}) => {
   if (!p || typeof p.then !== 'function') {
     throw new Error('no promise-like object is found')
   }
-  p
+  Promise.resolve(p)
     .then(() => {
       process.exit(0)
     })
