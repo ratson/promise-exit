@@ -17,9 +17,6 @@
     "node": ">=6"
   },
   "files": [
-    "*.md",
-    "LICENSE",
-    "lib",
-    "src"
+    "index.js"
   ]
 }
