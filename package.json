@@ -1,6 +1,6 @@
 {
   "name": "promise-exit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run process.exit() after a promise has finished.",
   "scripts": {
     "test": "ava"
